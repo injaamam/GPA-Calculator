@@ -65,6 +65,8 @@ body {
 
 .courses-container {
   margin-bottom: 32px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .table-header {
@@ -259,7 +261,7 @@ body {
   font-size: 2.5rem;
 }
 
-/* Mobile Responsive Styles */
+/* Mobile Responsive Styles - Keep same layout, just adjust sizes */
 @media (max-width: 768px) {
   body {
     padding: 12px;
@@ -280,52 +282,34 @@ body {
   }
 
   .table-header {
-    display: none;
+    font-size: 0.8rem;
+    padding: 10px 12px;
+    gap: 8px;
+    grid-template-columns: 1.2fr 1fr 1.2fr 0.6fr;
   }
 
   .course-row {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    background: #f8f9fa;
-    padding: 16px;
-    border-radius: 12px;
-    margin-bottom: 16px;
-  }
-
-  .input-wrapper {
-    width: 100%;
-  }
-
-  .mobile-label {
-    display: block;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #555;
-    margin-bottom: 6px;
+    gap: 8px;
+    margin-bottom: 10px;
+    grid-template-columns: 1.2fr 1fr 1.2fr 0.6fr;
   }
 
   .input-field {
-    width: 100%;
+    padding: 10px 12px;
+    font-size: 0.9rem;
   }
 
-  .action-buttons {
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 8px;
+  .credit-select,
+  .grade-select {
+    padding-right: 35px;
+    background-position: right 12px center;
   }
 
   .add-btn,
   .remove-btn {
-    flex: 1;
-    max-width: 120px;
-    border-radius: 8px;
-    height: 44px;
-  }
-
-  .results-container {
-    grid-template-columns: 1fr;
-    gap: 12px;
+    width: 36px;
+    height: 36px;
+    font-size: 1.3rem;
   }
 
   .result-value {
@@ -334,6 +318,10 @@ body {
 
   .gpa-value {
     font-size: 2rem;
+  }
+
+  .result-card {
+    padding: 20px;
   }
 }
 
@@ -346,12 +334,46 @@ body {
     padding: 16px;
   }
 
+  .table-header {
+    font-size: 0.75rem;
+    padding: 8px 10px;
+    gap: 6px;
+    grid-template-columns: 1fr 0.9fr 1.1fr 0.5fr;
+  }
+
+  .course-row {
+    gap: 6px;
+    grid-template-columns: 1fr 0.9fr 1.1fr 0.5fr;
+  }
+
+  .input-field {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+
+  .credit-select,
+  .grade-select {
+    padding-right: 30px;
+    background-position: right 10px center;
+  }
+
+  .add-btn,
+  .remove-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+  }
+
   .result-value {
     font-size: 1.5rem;
   }
 
   .gpa-value {
     font-size: 1.8rem;
+  }
+
+  .result-card {
+    padding: 16px;
   }
 }
 
