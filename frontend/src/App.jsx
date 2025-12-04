@@ -219,6 +219,9 @@ const App = () => {
             </div>
           </div>
         </div>
+
+        {/* Footer */}
+        <div className="app-footer">©INJAMAM</div>
       </div>
     </div>
   );
