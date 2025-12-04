@@ -16,7 +16,7 @@ const GRADE_OPTIONS = [
 ];
 
 // Available credit hour options
-const CREDIT_OPTIONS = [1.5, 2, 3, 4];
+const CREDIT_OPTIONS = [1, 1.5, 2, 3, 4];
 
 const App = () => {
   // State to store all courses
